@@ -15,7 +15,7 @@ function Dashboard() {
           <h2>Grafana Dashboard Embed</h2>
           <iframe
             title="Grafana"
-            src="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1"
+            src="https://snapshots.raintank.io/dashboard/snapshot/Bb612utQT6R4ylZ4KAc7CsUl6AHGxXoX?orgId=0&refresh=5s"
             width="100%"
             height="400"
             frameBorder="0"
@@ -26,7 +26,7 @@ function Dashboard() {
           <h2>Power BI Embed (Placeholder)</h2>
           <iframe
             title="PowerBI"
-            src="https://app.powerbi.com/view?r=FakePowerBiEmbedLink"
+            src="https://app.powerbi.com/reportEmbed?reportId=4def2165-07cb-4510-993e-d466f45dc4ee&autoAuth=true&ctid=8acbc2c5-c8ed-42c7-8169-ba438a0dbe2f "
             width="100%"
             height="400"
             frameBorder="0"
