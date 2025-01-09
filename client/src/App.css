@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #367280;    /* As per your palette */
+    --accent-color: #57A5B7;     /* As per your palette */
+    --dark-color: #092961;       /* Stormsaver dark color */
+    --white: #ffffff;
+  
+    --font-family: "Montserrat", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: #f5f7fa;
+    color: var(--dark-color);
+  }
+  
+  /* DROPLET SPINNER */
+  .droplet-spinner {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    margin: 2em auto;
+  }
+  
+  .droplet-spinner::before,
+  .droplet-spinner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 8px;
+    height: 24px;
+    background: var(--accent-color);
+    border-radius: 4px 4px 0 0;
+    animation: drip 1s infinite ease-in-out alternate;
+  }
+  
+  .droplet-spinner::after {
+    left: 0;
+    top: 28px;
+    width: 64px;
+    height: 32px;
+    border-radius: 50% 50% 0 0;
+    background: var(--accent-color);
+    animation: wave 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes drip {
+    0% {
+      height: 24px;
+    }
+    100% {
+      height: 48px;
+      background: var(--primary-color);
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-8px);
+      background: var(--primary-color);
+    }
+  }
+  
+  /* RAINDROP ANIMATION BACKGROUND */
+  .raindrop-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .raindrop {
+    position: absolute;
+    top: -10%;
+    width: 15px;
+    height: 15px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: raindrop-fall 4s linear infinite;
+  }
+  
+  @keyframes raindrop-fall {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(120vh) scale(1);
+      opacity: 0.2;
+    }
+  }
+  
+  /* WAVE SECTION (Hero) */
+  .wave-section {
+    position: relative;
+    background-color: var(--primary-color); /* #367280 from your palette */
+    padding: 6em 2em 4em; /* top/bottom spacing for the hero area */
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+    min-height: 60vh; /* ensure enough vertical space */
+  }
+  .hero-text-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-text-wrapper h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text-wrapper p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: block;
+  }
+  
+  /* BUTTONS */
+  .btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.6em 1.4em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.6em 1.4em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* UTILITY CLASSES */
+  .text-center {
+    text-align: center;
+  }
+  .my-4 {
+    margin: 2em 0;
+  }
+  .p-2 {
+    padding: 1em;
+  }
+  
+  /* AUTH FORMS */
+  .auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    background-color: #f5f7fa;
+  }
+  
+  .auth-box {
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    width: 360px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--dark-color);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
