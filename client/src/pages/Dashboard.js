@@ -17,7 +17,7 @@ function Dashboard() {
             title="Grafana"
             src="https://snapshots.raintank.io/dashboard/snapshot/Bb612utQT6R4ylZ4KAc7CsUl6AHGxXoX?orgId=0&refresh=5s"
             width="100%"
-            height="400"
+            height="1000"
             frameBorder="0"
           />
         </div>
@@ -28,7 +28,7 @@ function Dashboard() {
             title="PowerBI"
             src="https://app.powerbi.com/reportEmbed?reportId=4def2165-07cb-4510-993e-d466f45dc4ee&autoAuth=true&ctid=8acbc2c5-c8ed-42c7-8169-ba438a0dbe2f "
             width="100%"
-            height="400"
+            height="1000"
             frameBorder="0"
           />
         </div>
