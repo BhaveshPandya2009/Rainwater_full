@@ -16,7 +16,7 @@ function Dashboard() {
           <iframe
             title="Grafana"
             /*src="https://snapshots.raintank.io/dashboard/snapshot/SqiZMlt7aBFzIOM2maGXmXoJKiQ63pNw?orgId=0&refresh=5s&theme=light"*/
-            src="https://snapshots.raintank.io/dashboard/snapshot/jniwJm8PQ7qt0GYUj53LdIBjRBh1pnYz?orgId=0&refresh=5s&theme=light"
+            src="https://snapshots.raintank.io/dashboard/snapshot/JDnUC1v7WlBIV9V9pWVGnRCEqXhyEoJs?orgId=0&refresh=5s&theme=light"
             width="100%"
             height="1000"
             frameBorder="0"
